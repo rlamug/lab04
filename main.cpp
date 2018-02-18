@@ -13,12 +13,14 @@ int main(){
         // List list();  is incorrect, when there are no arguments don't use ()
 
         // insert numbers into the list
-        while(cin >> value){
+        while(cin >> value)
+        {
                 list.insert_at_end(value);
-
-                list.print();
-                cout << "sum = " << list.sum() << endl;
         }
+
+        list.print();
+        cout << "sum = " << list.sum() << endl;
+
 
         return 0;
 }
